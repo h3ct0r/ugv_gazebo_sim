@@ -1,13 +1,20 @@
 ### Usage for the Scout Mini
-Building the package:
 
+Install related packages:
+```bash
+sudo apt install -y ros-jazzy-ros-gz ros-jazzy-joint-state-publisher ros-jazzy-joint-state-publisher-gui ros-jazzy-rqt-robot-steering ros-jazzy-teleop-twist-keyboard ros-jazzy-ros2-control ros-jazzy-ros2-controllers 'ros-jazzy-joint-state-*' 'ros-jazzy-nav2-*'
+```
+
+Building the package:
 ```bash
     colcon build --symlink-install
 ```
+
 Source the built packages:
 ```bash
     source install/setup.bash
 ```
+
 Launch the simulation environment:
 ```bash
     ros2 launch scout_gazebo_sim scout_mini_empty_world.launch.py
