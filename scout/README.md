@@ -1,11 +1,12 @@
 ### Usage for the Scout Mini
-Building the package: 
+Building the package:
+
 ```bash
-    colcon build
+    colcon build --symlink-install
 ```
 Source the built packages:
 ```bash
-    . install/setup.bash
+    source install/setup.bash
 ```
 Launch the simulation environment:
 ```bash
